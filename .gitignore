@@ -1,40 +1,30 @@
-# Environment & credentials
+# Environment files (NEVER commit these)
 .env
-*.env
 .env.local
 .env.production
 
-# Logs
-*.log
-logs/
-error_log
+# Database files
+*.sql
+!database.sql
 
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Editor files
+# IDE/Editor files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# PHP
-*.cache
+# OS files
+.DS_Store
+Thumbs.db
 
-# Composer (if added later)
+# Logs
+*.log
+logs/
+
+# Dependencies (if you add Composer later)
 vendor/
-composer.lock
-
-# Node (if added later)
 node_modules/
-package-lock.json
 
-# Upload directory (user data — never commit)
-uploads/
-
-# Backup files
-*.bak
-*.sql.gz
+# Cache
+*.cache
