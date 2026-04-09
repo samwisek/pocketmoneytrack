@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: pockettrack
+    runtime: php
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:10000"
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASS
+        sync: false
+      - key: APP_ENV
+        value: production
+      - key: SESSION_TIMEOUT
+        value: "3600"
